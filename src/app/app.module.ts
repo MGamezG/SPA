@@ -10,6 +10,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 //rutas
 import { AppRoutingModule } from './app-routing.module';
 //servicios
+import { HeroesService } from './services/heroes.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    //aqui se colocan los servicios
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
