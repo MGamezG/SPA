@@ -7,10 +7,12 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { HeroePageComponent } from './components/heroe-page/heroe-page.component';
 //rutas
 import { AppRoutingModule } from './app-routing.module';
 //servicios
 import { HeroesService } from './services/heroes.service';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { HeroesService } from './services/heroes.service';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroePageComponent
   ],
   imports: [
     BrowserModule,

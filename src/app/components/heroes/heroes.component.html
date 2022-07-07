@@ -3,15 +3,18 @@
 
 <!-- Ejemplo en codigo Duro-->
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col" *ngFor="let heroe of heroes">
+  <div class="col" *ngFor="let heroe of heroes; let i =index">
     <div class="card h-100">
       <img [src]="heroe.img" class="card-img-top" alt="aquaman">
       <div class="card-body">
         <h5 class="card-title">{{heroe.nombre}}</h5>
         <p class="card-text">{{heroe.bio}}</p>
         <div class="d-grid gap-2 col-9 mx-auto ">
-          <button type="button" class="btn btn-dark ">Leer mas</button>
+          <button type="button" class="btn btn-dark " (click)="verHeroe(i)">Leer mas</button>
         </div>
+        <!-- <div class="d-grid gap-2 col-9 mx-auto ">
+          <a [routerLink]="['/heroe',i]" class="btn btn-dark">Leer más</a>
+        </div> -->
 
       </div>
       <div class="card-footer">
