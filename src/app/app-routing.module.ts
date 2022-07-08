@@ -1,3 +1,4 @@
+import { BuscarComponent } from './components/buscar/buscar.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path:'heroe/:id',
     component:HeroePageComponent
+  },
+  {
+    path:'search/:termino',
+    component:BuscarComponent
   }
 
 ];
